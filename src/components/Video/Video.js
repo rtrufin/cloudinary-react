@@ -53,7 +53,7 @@ class Video extends CloudinaryComponent {
     }
 
     return (
-      <video ref={handleRef} {...tagAttributes}>
+      <video ref={`${ref}Item`} {...tagAttributes}>
         {sources}
         {fallback}
         {this.props.children}
